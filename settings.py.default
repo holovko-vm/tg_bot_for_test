@@ -1,0 +1,4 @@
+
+token = "Put token of your bot here"
+
+app_id = 'Put your app_id from openexchangerates.org/api/latest here'
