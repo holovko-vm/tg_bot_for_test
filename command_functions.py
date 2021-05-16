@@ -2,7 +2,6 @@ from os.path import join
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 import requests
-from bs4 import BeautifulSoup
 import json
 from settings import app_id
 from datetime import datetime
