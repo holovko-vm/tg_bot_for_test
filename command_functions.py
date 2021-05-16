@@ -125,7 +125,7 @@ def exchange(**kwargs):
                                 currency = second_list[-1]
                             exchange_rate = data['rates'][f'{currency}']
                             user_answer = round(number_dollars*exchange_rate, 2)
-                            update.message.reply_text(f'{user_answer} $')
+                            update.message.reply_text(f'{user_answer} - {currency}')
                         
                 else:
                     with open('exchange_rates_file.json', 'r') as read_file:
@@ -146,7 +146,7 @@ def exchange(**kwargs):
                                 currency = second_list[-1]
                             exchange_rate = data['rates'][f'{currency}']
                             user_answer = round(number_dollars*exchange_rate, 2)
-                            update.message.reply_text(f'{user_answer} $')
+                            update.message.reply_text(f'{user_answer} - {currency}')
               
              
         except FileNotFoundError:
@@ -175,5 +175,5 @@ def exchange(**kwargs):
                         currency = second_list[-1]
                     exchange_rate = data['rates'][f'{currency}']
                     user_answer = round(number_dollars*exchange_rate, 2)
-                    update.message.reply_text(f'{user_answer} $')
+                    update.message.reply_text(f'{user_answer} - {currency}')
     return exchange
